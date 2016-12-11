@@ -12,7 +12,6 @@
                (map #(s/split % #"\s+"))
                (map #(filter not-empty %))
                (map #(map to-int %))))
-(permutations)
 
 (defn is-triangle? [[side-a side-b side-c]]
   (and (> (+ side-a side-b) side-c)
